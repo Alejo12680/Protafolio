@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 
 export class FooterComponent {
 
+  public anio: number;
+
+  constructor() {
+    this.anio = new Date().getFullYear();
+  }
+
 }

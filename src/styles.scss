@@ -1,5 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,100;1,200&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
 
 :root {
-    --color-letter: white;
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
