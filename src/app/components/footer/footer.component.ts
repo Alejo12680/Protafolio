@@ -10,6 +10,7 @@ export class FooterComponent {
 
   public anio: number;
 
+  //Esta funcion hace que se actualice el año automaticamente
   constructor() {
     this.anio = new Date().getFullYear();
   }

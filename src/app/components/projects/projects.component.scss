@@ -1,0 +1,135 @@
+.projec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.heading_2 {
+    font-size: 5rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.projec .projec-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.projec-column .card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    overflow: hidden;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotate(0deg);
+    -webkit-transform: perspective(600px) rotate(0deg);
+    -moz-transform: perspective(600px) rotate(0deg);
+    -ms-transform: perspective(600px) rotate(0deg);
+    -o-transform: perspective(600px) rotate(0deg);
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -moz-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+    background: var(--second-bg-color);
+    border: solid 2px var(--main-color);
+    padding: 15px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.card .back h3 {
+    font-size: 3rem;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back .link {
+    border-top: solid 2px var(--text-color);
+    height: 50px;
+    line-height: 50px;
+    background: rgba(0, 0, 0, .4);
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+}
+
+.card .back .link a {
+    color: var(--text-color);
+    font-size: 1.8rem;
+}
+
+//Este hover hace girar el front 180 grados
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -moz-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+}
+
+//Este hover hace girar el back 360 grados
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+    -webkit-transform: perspective(600px) rotateY(360deg);
+    -moz-transform: perspective(600px) rotateY(360deg);
+    -ms-transform: perspective(600px) rotateY(360deg);
+    -o-transform: perspective(600px) rotateY(360deg);
+}
+
+
