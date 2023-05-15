@@ -31,8 +31,20 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    /* min-height: 100vh; Se modifico para que el footer no que*/
+    min-height: 96.9vh;
     padding: 10rem 9% 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+//Letra del titulo Principal
+.heading {
+    font-size: 5rem;
+    margin-bottom: 6rem;
+    text-align: center;
 }
 
 //boton principal
@@ -116,16 +128,4 @@ section {
 
 .btn-box.btns a::before {
     background: var(--second-bg-color);
-}
-
-
-//Letra del titulo Principal
-.heading {
-    font-size: 5rem;
-    margin-bottom: 6rem;
-    text-align: center;
-}
-
-span {
-    color: var(--main-color);
 }

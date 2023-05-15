@@ -1,6 +1,13 @@
 footer {
-    width: 100%;
-    color: var(--color-letter);
-    position: fixed;
-    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .5rem 9%;
+    background: black;
+
+}
+
+footer .footer-text {
+    font-size: 1.3rem;
 }
