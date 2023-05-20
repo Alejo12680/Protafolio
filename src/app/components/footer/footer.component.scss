@@ -5,9 +5,18 @@ footer {
     flex-wrap: wrap;
     padding: .5rem 9%;
     background: black;
-
 }
 
 footer .footer-text {
     font-size: 1.3rem;
+}
+
+//***********************BreakPoints**************************//
+
+@media (max-width: 430px) {
+
+    footer {
+        justify-content: center;
+    }
+    
 }

@@ -9,6 +9,7 @@
 
 .home-content {
     max-width: 60rem;
+    z-index: 99;
 }
 
 .home-content h1 {
@@ -27,6 +28,36 @@
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
+
+    //color del texto interno con la animacion para (KeyFrames)
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+
+    //Animacion
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    background-position: -33rem 0; //Al actualizar la pagina regrese al principio del texto
+    animation: homeBgText 6s linear infinite;
+    -webkit-animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
+}
+
+//Animacion del Cursor del texto con color
+.home-content .text-animate h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid var(--main-color);
+    z-index: -1;
+
+    //Animacion 
+    animation: homeCursorText 6s linear infinite;
+    -webkit-animation: homeCursorText 6s linear infinite;
+    animation-delay: 2s;
 }
 
 .home-content p {
@@ -112,4 +143,67 @@
 .home-img:hover {
     background: var(--bg-color);
     opacity: .8;
+}
+
+//*****************BreakPoints**************************//
+
+@media (max-width: 768px) {
+    
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: .6;
+    }
+}
+
+@media (max-width: 520px) {
+    
+    .home-content h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-sci {
+        width: 160px;
+    }
+
+    .home-sci a {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .home-content h1 {
+        font-size: 5.2rem;
+    }
+}
+
+//*******************KeyFrames Animation************************//
+@keyframes homeBgText {
+
+    0%, 10%, 100% {
+        background-position: -33rem 0;
+    } 
+    
+    65%, 85% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes homeCursorText {
+
+    0%, 10%, 100% {
+        width: 0;
+    } 
+    
+    65%, 78%, 85% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%, 81% {
+        opacity: 0;
+    }
 }

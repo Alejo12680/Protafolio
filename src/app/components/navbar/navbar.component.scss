@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background: var(--bg-color);
 }
 
 .logo {
@@ -35,7 +36,113 @@
 
 #menu-icon {
     font-size: 3.6rem;
-    cursor: pointer;
     color: var(--text-color);
+    background: transparent;
     display: none;
 }
+
+#menu-icon:active {
+    color: var(--main-color);
+}
+
+//*****************BreakPoints**************************//
+
+//Seccion del Menu Hamburguesa | Funcionalidad en el TipeScript
+@media (max-width: 768px) {
+    
+    #menu-icon {
+        display: block;
+    }   
+
+    /* El left se cambio de 0 a -100% cuando se coloco la clase 'active' junto la transition */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--bg-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        transition: .25s ease;
+        -webkit-transition: .25s ease;
+        -moz-transition: .25s ease;
+        -ms-transition: .25s ease;
+        -o-transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a {
+        transform: translateX(-20rem);
+        -webkit-transform: translateX(-20rem);
+        -moz-transform: translateX(-20rem);
+        -ms-transform: translateX(-20rem);
+        -o-transform: translateX(-20rem);
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transition-delay: .20s;
+    }
+}
+
+@media (max-width: 515px) {
+    
+    #menu-icon {
+        display: block;
+    }   
+
+    /* El left se cambio de 0 a -100% cuando se coloco la clase 'active' junto la transition */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--bg-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        transition: .25s ease;
+        -webkit-transition: .25s ease;
+        -moz-transition: .25s ease;
+        -ms-transition: .25s ease;
+        -o-transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        -webkit-transform: translateX(-20rem);
+        -moz-transform: translateX(-20rem);
+        -ms-transform: translateX(-20rem);
+        -o-transform: translateX(-20rem);
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transition-delay: .20s;
+    }
+}
+
+
