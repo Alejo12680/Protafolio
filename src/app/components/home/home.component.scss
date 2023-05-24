@@ -16,6 +16,10 @@
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
+
+    //Para el redload
+    position: relative;
+    display: inline-block;  
 }
 
 .home-content .text-animate {
@@ -63,6 +67,7 @@
 .home-content p {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
+    position: relative;  //Para el redload
 }
 
 //Iconos de faces, git, link
@@ -125,12 +130,12 @@
 }
 
 //Imagen
-.home-img {
+.home-imgHover {
     position: absolute;
     top: 0;
     right: 0;
     width: 45%;
-    height: 100%;
+    height: 95%;
     background: transparent;
 /*     border: 2px solid red; */
     transition: 3s;
@@ -140,10 +145,33 @@
     -o-transition: 3s;
 }
 
-.home-img:hover {
+.home-imgHover:hover {
     background: var(--bg-color);
     opacity: .8;
 }
+
+//********************Animacion de Redload************************/
+
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 98;
+}
+
+.animate.home-img {
+    width: 50%;
+}
+
+.home .animate {
+    animation: showRinght 1s ease forwards;
+    -webkit-animation: showRinght 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));     //Variable que esta en el Html
+}
+
 
 //*****************BreakPoints**************************//
 
@@ -171,12 +199,20 @@
         width: 38px;
         height: 38px;
     }
+
+    .home-imgHover {
+        display: none;
+    }
 }
 
 @media (max-width: 430px) {
 
     .home-content h1 {
         font-size: 5.2rem;
+    }
+
+    .home-imgHover {
+        display: none;
     }
 }
 
@@ -205,5 +241,11 @@
 
     75%, 81% {
         opacity: 0;
+    }
+}
+
+@keyframes showRinght {
+    100% {
+        width: 0;
     }
 }

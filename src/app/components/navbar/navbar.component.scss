@@ -13,9 +13,14 @@
 }
 
 .logo {
+    position: relative;  //Para el redload
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
+}
+
+.navbar {
+    position: relative;  //Para el redload
 }
 
 .navbar a {
@@ -39,10 +44,31 @@
     color: var(--text-color);
     background: transparent;
     display: none;
+    position: relative;  //Para el redload
 }
 
 #menu-icon:active {
     color: var(--main-color);
+}
+
+//********************Animacion de Redload************************/
+
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 98;
+}
+
+.logo .animate,
+.navbar .animate,
+#menu-icon .animate {
+    animation: showRinght 1s ease forwards;
+    -webkit-animation: showRinght 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));     //Variable que esta en el Html
 }
 
 //*****************BreakPoints**************************//
@@ -142,6 +168,14 @@
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
         transition-delay: .20s;
+    }
+}
+
+//*******************KeyFrames Animation************************//
+
+@keyframes showRinght {
+    100% {
+        width: 0;
     }
 }
 
