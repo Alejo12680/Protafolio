@@ -5,20 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+
   title = 'portafolio';
+
+  //Variable para mostrar el loading
+  showPreloading: boolean = false;
 
   constructor( ) {
 
    }
 
   ngOnInit() {
-    //Funcion de cuando se active el ecroll cambie de color el navbar
-    window.onscroll = () => {
-      let header = document.querySelector('header');
+  
+    setTimeout(() => {
+      this.showPreloading = true;
+    }, 5200);
 
-      header?.classList.toggle('sticky', window.screenY > 100);
-    }
   }
   
 }

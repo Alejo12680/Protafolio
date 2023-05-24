@@ -1,7 +1,17 @@
-<app-navbar></app-navbar>
-
-<div>
-    <router-outlet></router-outlet> 
+<div *ngIf="!showPreloading; else elseTemplate">
+    <app-preloading></app-preloading>
 </div>
+<ng-template #elseTemplate>
+    <app-navbar></app-navbar>
 
-<app-footer></app-footer> 
+    <div>
+        <router-outlet></router-outlet> 
+    </div>
+
+    <app-footer></app-footer> 
+</ng-template>
+
+    
+
+
+

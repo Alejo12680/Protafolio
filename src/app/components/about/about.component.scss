@@ -52,6 +52,10 @@
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
+
+    //Animacion de los circles con (KeyFrames)
+    animation: aboutSpinner 8s linear infinite;
+    -webkit-animation: aboutSpinner 8s linear infinite;
 }
 
 .about-content {
@@ -67,5 +71,17 @@
     margin: 2rem 0 3rem;
 }
 
+
+//*******************KeyFrames Animation************************//
+@keyframes aboutSpinner {
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        -moz-transform: translate(-50%, -50%) rotate(360deg);
+        -ms-transform: translate(-50%, -50%) rotate(360deg);
+        -o-transform: translate(-50%, -50%) rotate(360deg);
+} 
+}
 
 

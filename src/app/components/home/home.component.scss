@@ -29,18 +29,18 @@
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
 
-    //color del texto interno con la animacion para (KeyFrames)
+    //color del texto interno con la animacion para(KeyFrames)
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
 
-    //Animacion
-    -webkit-background-clip: text;
+    //Animacion-webkit-background-clip: text;
     background-clip: text;
+    background-position: -33rem 0;
 
-    background-position: -33rem 0; //Al actualizar la pagina regrese al principio del texto
-    animation: homeBgText 6s linear infinite;
-    -webkit-animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
+    //Al actualizar la pagina regrese al principio delt exto
+    animation: homeBgText 5s linear infinite;
+    -webkit-animation: homeBgText 5s linear infinite;
+    animation-delay: 1s;
 }
 
 //Animacion del Cursor del texto con color
@@ -55,9 +55,9 @@
     z-index: -1;
 
     //Animacion 
-    animation: homeCursorText 6s linear infinite;
-    -webkit-animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
+    animation: homeCursorText 5s linear infinite;
+    -webkit-animation: homeCursorText 5s linear infinite;
+    animation-delay: 1s;
 }
 
 .home-content p {
