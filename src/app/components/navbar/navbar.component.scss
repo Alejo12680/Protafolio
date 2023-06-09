@@ -13,6 +13,7 @@
 }
 
 .logo {
+    text-decoration: none;
     position: relative;  //Para el redload
     font-size: 2.5rem;
     color: var(--text-color);
@@ -24,6 +25,7 @@
 }
 
 .navbar a {
+    text-decoration: none;
     font-size: 1.7rem;
     color: var(--text-color);
     font-weight: 500;

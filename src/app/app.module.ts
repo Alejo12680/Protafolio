@@ -12,6 +12,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PreloadingComponent } from './components/preloading/preloading.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,7 @@ import { PreloadingComponent } from './components/preloading/preloading.componen
     EducationComponent,
     SkillsComponent,
     ProjectsComponent,
-    PreloadingComponent
+    PreloadingComponent,
   ],
   imports: [
     BrowserModule,
