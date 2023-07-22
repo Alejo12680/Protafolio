@@ -1,6 +1,10 @@
 .skills {
     padding-bottom: 7rem;
     background-color: var(--second-bg-color);
+    background-image: url(../../../assets/fondo_habilidades.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .skills .skills-row {
@@ -94,7 +98,7 @@
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 70%;
+    width: 80%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
@@ -102,16 +106,16 @@
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 50%;
+    width: 75%;
 }
 
 //Contenido de las barras de progreso Habilidades
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 95%;
+    width: 85%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 80%;
+    width: 45%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {

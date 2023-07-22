@@ -5,6 +5,11 @@
     flex-direction: column;
     gap: 2rem;
     background: var(--second-bg-color);
+    background-image: url(../../../assets/fondo_personal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
     padding-bottom: 6rem;
 }
 
