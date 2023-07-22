@@ -10,8 +10,8 @@
 
 .about-img {
     position: relative;
-    width: 25rem;
-    height: 25rem;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -29,7 +29,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border: .2rem solid var(--main-color);
+    border: .3rem solid var(--main-color);
 }
 
 .about-img .circle-spin {
@@ -48,10 +48,10 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border-top: .2rem solid var(--second-bg-color);
-    border-bottom: .2rem solid var(--second-bg-color);
-    border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
+    border-top: .5rem solid var(--second-bg-color);
+    border-bottom: .5rem solid var(--second-bg-color);
+    border-left: .5rem solid var(--main-color);
+    border-right: .5rem solid var(--main-color);
 
     //Animacion de los circles con (KeyFrames)
     animation: aboutSpinner 8s linear infinite;
@@ -68,7 +68,19 @@
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 2rem 3rem 3rem;
+}
+
+
+//*****************BreakPoints**************************//
+
+@media (max-width: 430px) {
+
+    .about-content p {
+        font-size: 1.8rem;
+        margin: 2rem 0 3rem;
+    }
+
 }
 
 
