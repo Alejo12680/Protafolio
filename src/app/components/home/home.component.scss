@@ -177,12 +177,19 @@
 
 //*****************BreakPoints**************************//
 
+@media (max-width: 1030px) {
+    
+    .home-imgHover {
+        pointer-events: none;
+        opacity: .10;
+    }
+}
+
 @media (max-width: 768px) {
     
     .home-imgHover {
         pointer-events: none;
-        background: var(--bg-color);
-        opacity: .6;
+        opacity: .10;
     }
 }
 
