@@ -60,6 +60,7 @@
     -ms-border-radius: .6rem;
     -o-border-radius: .6rem;
     margin-bottom: 2rem;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -71,7 +72,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--second-bg-color);
+    background: #001029;
     z-index: -1;
     transition: .5s;
     -webkit-transition: .5s;
