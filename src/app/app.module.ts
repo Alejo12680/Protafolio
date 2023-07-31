@@ -11,6 +11,7 @@ import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PreloadingComponent } from './components/preloading/preloading.component';
+import { AboutPerfilComponent } from './components/about-perfil/about-perfil.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { PreloadingComponent } from './components/preloading/preloading.componen
     SkillsComponent,
     ProjectsComponent,
     PreloadingComponent,
+    AboutPerfilComponent,
   ],
   imports: [
     BrowserModule,

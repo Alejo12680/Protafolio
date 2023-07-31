@@ -13,7 +13,7 @@ export class NavbarComponent {
 
   ngOnInit() {
 
-    //Funcion Clasica de colocar un Toggle del navbar en TypeScrip
+    //Funcion Clasica de colocar un Toggle del navbar cuando en responsive en mobile en TypeScrip
     let menuIcon = (document.querySelector('#menu-icon') as HTMLButtonElement);
     let navbar = (document.querySelector('.navbar') as HTMLElement);
     let selection =(document.querySelector('.selection') as HTMLElement);
@@ -26,7 +26,7 @@ export class NavbarComponent {
       menuIcon.classList.toggle('bx-x');
       navbar.classList.toggle('active');
 
-      //Funcion que hace que los links se cierren cuando se haga el click
+      //Funcion que hace que los links se cierren cuando se haga el click en responsive en mobile
       selection.addEventListener('click', () : void => {
         menuIcon.classList.remove('bx-x');
         navbar.classList.remove('active');

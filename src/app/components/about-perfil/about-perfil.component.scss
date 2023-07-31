@@ -1,0 +1,67 @@
+.aboutPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--second-bg-color);
+    background-image: url(../../../assets/fondo_personal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    padding-bottom: 6rem;
+}
+
+.aboutPerfil-contents {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 70px;
+}
+
+// Seccion de Imagen
+.aboutPerfil-contents .aboutPerfil-img {
+    position: relative;
+    min-width: 30rem;
+    height: 38rem;
+}
+
+.aboutPerfil-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.aboutPerfil-contents .aboutPerfil-img::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    outline: 3px solid var(--main-color);
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+.aboutPerfil-info h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.aboutPerfil-info h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background-color: var(--text-color);
+}
+
+.aboutPerfil-info h1::after {
+    
+}
