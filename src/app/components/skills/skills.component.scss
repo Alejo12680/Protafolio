@@ -94,34 +94,92 @@
 
 //Contenido de las barras de progreso Programas
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 90%;
+    width: 0;
+    animation: html 2s forwards;
+}
+
+@keyframes html {
+    100% {
+        width: 90%;
+    }
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 80%;
+    width: 0;
+    animation: css 2s forwards;
+}
+
+@keyframes css {
+    100% {
+        width: 80%;
+    }
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 40%;
+    width: 0;
+    animation: python 2s forwards;
+}
+
+@keyframes python {
+    100% {
+        width: 40%;
+    }
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 75%;
+    width: 0;
+    animation: angular 2s forwards;
 }
+
+@keyframes angular {
+    100% {
+        width: 75%;
+    }
+}
+
 
 //Contenido de las barras de progreso Habilidades
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 85%;
+    width: 0;
+    animation: frontend 2s forwards;
+}
+
+@keyframes frontend {
+    100% {
+        width: 85%;
+    }
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 45%;
+    width: 0;
+    animation: backend 2s forwards;
+}
+
+@keyframes backend {
+    100% {
+        width: 45%;
+    }
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 75%;
+    width: 0;
+    animation: diseno 2s forwards;
+}
+
+@keyframes diseno {
+    100% {
+        width: 75%;
+    }
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 45%;
+    width: 0;
+    animation: dataBases 2s forwards;
 }
+
+@keyframes dataBases {
+    100% {
+        width: 45%;
+    }
+}
+
