@@ -8,16 +8,40 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    backdrop-filter: blur(10px);
 }
 
-// Seccion de Imagen
+
 .aboutPerfil-contents {
     display: grid;
     grid-template-columns: 1fr 5fr;
     gap: 70px;
 }
 
+.perfilTitle {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 5fr;
+}
+
+.perfilTitle a {
+    position: relative;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 0.7rem;
+}
+
+// Seccion de Imagen
 .aboutPerfil-contents .aboutPerfil-img {
     position: relative;
     min-width: 30rem;
@@ -87,6 +111,15 @@
     padding-bottom: 0.8rem;
 }
 
+.aboutPerfil-idioma {
+    border-bottom: 2px solid var(--text-color);
+}
+
+.aboutPerfil-idioma span {
+    font-size: 2rem;
+    color: rgb(0, 221, 255);
+}
+
 .aboutPerfil-info .aboutPerfil-personal {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,6 +134,15 @@
     font-weight: 600;
 }
 
+.aboutPerfil-personal span {
+    font-size: 2rem;
+    color: cyan;
+}
+
+.aboutPerfil-personal .title {
+    color: white;
+}
+
 // Seccion de habilidades Blandas con barras de progresos
 .aboutPerfil-contenedorSkill {
     width: 100%;
@@ -109,8 +151,8 @@
 
 .skills {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
     margin-top: 1.4rem;
     border-bottom: 2px solid var(--text-color);
 }
@@ -119,15 +161,15 @@
     position: relative;
     border: 1px solid var(--main-color);
     border-radius: 3rem;
-    height: 1.5rem;
+    height: 1.7rem;
     margin-top: 2rem;
     background-color: var(--bg-color);
 }
 
 .linea-progress div {
-    position: relative;
+    position: absolute;
     width: 0;
-    border-radius: 3rem;
+    border-radius: 4rem;
     background-color: var(--main-color);
     height: 1.5rem;    
 }
@@ -135,7 +177,7 @@
 /* *** Animacion *** */
 
 #habilidad_1 {
-    animation: habilidad_1 3s forwards;
+    animation: habilidad_1 2s forwards;
 }
 
 @keyframes habilidad_1 {
@@ -145,7 +187,7 @@
 }
 
 #habilidad_2 {
-    animation: habilidad_2 3s forwards;
+    animation: habilidad_2 2s forwards;
 }
 
 @keyframes habilidad_2 {
@@ -155,27 +197,63 @@
 }
 
 #habilidad_3 {
-    animation: habilidad_3 3s forwards;
+    animation: habilidad_3 2s forwards;
 }
 
 @keyframes habilidad_3 {
+    100% {
+        width: 80%;
+    }
+}
+
+#habilidad_4 {
+    animation: habilidad_4 2s forwards;
+}
+
+@keyframes habilidad_4 {
     100% {
         width: 85%;
     }
 }
 
-#habilidad_4 {
-    animation: habilidad_4 3s forwards;
+//*****************BreakPoints**************************//
+@media (max-width: 768px) {
+    
+    .aboutPerfil-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutPerfil-contents .aboutPerfil-img {
+        width: 25rem;
+        height: 35rem;
+    }
+
+    .perfilTitle {
+        display: grid;
+        grid-template-columns: 1fr 15fr;
+    }
+
 }
 
-@keyframes habilidad_4 {
-    100% {
-        width: 75%;
+@media (max-width: 520px) {
+    
+    .aboutPerfil-contents .aboutPerfil-img {
+        width: 15rem;
+        height: 35rem;
     }
 }
 
-//*****************BreakPoints**************************//
+@media (max-width: 430px) {
 
-@media screen {
-    
+    .aboutPerfil-contents .aboutPerfil-img {
+        width: 8rem;
+        height: 35rem;
+    }
+
+    .aboutPerfil-info p {
+        font-size: 1.8rem;
+
+    }
 }
