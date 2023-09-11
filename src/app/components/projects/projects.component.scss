@@ -91,6 +91,7 @@
     text-align: center;
     font-size: 1.5rem;
     box-shadow: 0 0 10px var(--main-color);
+    overflow: auto;
 }
 
 .card .back h3 {
@@ -100,6 +101,7 @@
 }
 
 .card .back .link {
+    margin-top: 1rem;
     border-top: solid 2px var(--text-color);
     height: 50px;
     line-height: 50px;
