@@ -12,6 +12,12 @@ import { AboutPerfilComponent } from './components/about-perfil/about-perfil.com
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  
+  {
     path: 'home',
     component: HomeComponent
   },
@@ -35,16 +41,10 @@ const routes: Routes = [
     path: 'projects',
     component: ProjectsComponent
   },
- 
+
   {
     path: 'perfil',
     component: AboutPerfilComponent
-  },
-
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
   }
 ];
 
