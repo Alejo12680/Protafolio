@@ -171,7 +171,7 @@
     width: 0;
     border-radius: 4rem;
     background-color: var(--main-color);
-    height: 1.5rem;    
+    height: 1.5rem;
 }
 
 /* *** Animacion *** */
@@ -182,7 +182,7 @@
 
 @keyframes habilidad_1 {
     100% {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -192,7 +192,7 @@
 
 @keyframes habilidad_2 {
     100% {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -202,7 +202,7 @@
 
 @keyframes habilidad_3 {
     100% {
-        width: 80%;
+        width: 85%;
     }
 }
 
@@ -212,13 +212,13 @@
 
 @keyframes habilidad_4 {
     100% {
-        width: 85%;
+        width: 80%;
     }
 }
 
 //*****************BreakPoints**************************//
 @media (max-width: 768px) {
-    
+
     .aboutPerfil-contents {
         display: flex;
         flex-direction: column;
@@ -238,7 +238,7 @@
 }
 
 @media (max-width: 520px) {
-    
+
     .aboutPerfil-contents .aboutPerfil-img {
         width: 15rem;
         height: 35rem;
