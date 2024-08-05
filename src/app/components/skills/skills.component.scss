@@ -30,7 +30,7 @@
     -moz-border-radius: .6rem;
     -ms-border-radius: .6rem;
     -o-border-radius: .6rem;
-    padding: .5rem 1.5rem;  
+    padding: .5rem 1.5rem;
     z-index: 1;
     overflow: hidden;
 }
@@ -100,7 +100,7 @@
 
 @keyframes html {
     100% {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -111,7 +111,7 @@
 
 @keyframes css {
     100% {
-        width: 80%;
+        width: 50%;
     }
 }
 
@@ -122,7 +122,7 @@
 
 @keyframes python {
     100% {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -133,7 +133,51 @@
 
 @keyframes angular {
     100% {
-        width: 75%;
+        width: 80%;
+    }
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+    width: 0;
+    animation: php 2s forwards;
+}
+
+@keyframes php {
+    100% {
+        width: 20%;
+    }
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+    width: 0;
+    animation: react 2s forwards;
+}
+
+@keyframes react {
+    100% {
+        width: 20%;
+    }
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span {
+    width: 0;
+    animation: mysql 2s forwards;
+}
+
+@keyframes mysql {
+    100% {
+        width: 50%;
+    }
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(8) .bar span {
+    width: 0;
+    animation: mongodb 2s forwards;
+}
+
+@keyframes mongodb {
+    100% {
+        width: 20%;
     }
 }
 
@@ -146,7 +190,7 @@
 
 @keyframes frontend {
     100% {
-        width: 85%;
+        width: 80%;
     }
 }
 
@@ -157,7 +201,7 @@
 
 @keyframes backend {
     100% {
-        width: 45%;
+        width: 70%;
     }
 }
 
@@ -168,7 +212,7 @@
 
 @keyframes diseno {
     100% {
-        width: 75%;
+        width: 95%;
     }
 }
 
@@ -179,7 +223,7 @@
 
 @keyframes dataBases {
     100% {
-        width: 45%;
+        width: 60%;
     }
 }
 
